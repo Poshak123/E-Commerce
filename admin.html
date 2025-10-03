@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Panel</title>
+  <link rel="stylesheet" href="style/admin.css">
+</head>
+<body>
+  <div class="admin-container">
+    <h1>Admin Panel</h1>
+    <form id="addProductForm">
+      <input type="text" id="name" placeholder="Product Name" required>
+      <input type="number" id="price" placeholder="Price" required>
+      <input type="text" id="image" placeholder="Image URL" required>
+      <textarea id="description" placeholder="Description"></textarea>
+      
+      <div>
+                <label><input type="checkbox" value="S" class="size-option"> S</label>
+                <label><input type="checkbox" value="M" class="size-option"> M</label>
+                <label><input type="checkbox" value="L" class="size-option"> L</label>
+                <label><input type="checkbox" value="XL" class="size-option"> XL</label>
+            </div>
+      <select id="category" required>
+        <option value="">Select Category</option>
+        <option value="men">Men</option>
+        <option value="women">Women</option>
+        <option value="kids">Kids</option>
+      </select>
+      
+      <button type="submit">Add Product</button>
+    </form>
+
+    <h2>Product List</h2>
+    <div id="product-list"></div>
+  </div>
+
+  <script src="scripts/admin.js"></script>
+</body>
+</html>

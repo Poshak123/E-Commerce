@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Shopping Cart</title>
+  <link rel="stylesheet" href="style/cart.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html">STYLEHUB</a>
+    <nav>
+      <a href="Home.html">Home</a>
+      <a href="cart.html">Cart <span id="cart-count" class="cart-count">0</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="cart-container">
+      <h1>Your Cart</h1>
+
+      <div id="cart-items" class="cart-items"></div>
+
+      <div class="cart-summary">
+        <div class="summary-left">
+          <button id="clear-cart" class="btn">Clear Cart</button>
+        </div>
+        <div class="summary-right">
+          <h2>Total: $<span id="cart-total">0.00</span></h2>
+          <button id="checkout-btn" class="btn primary">Proceed to Checkout</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="scripts/cart.js"></script>
+</body>
+</html>

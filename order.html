@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Order</title>
+  <link rel="stylesheet" href="style/order.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Order Summary</h1>
+    <div id="order-items"></div>
+
+    <div class="order-total">
+      <h2>Total: $<span id="order-total">0</span></h2>
+    </div>
+
+    <!-- Delivery Details -->
+    <h2>Delivery Details</h2>
+    <form id="delivery-form" class="delivery-form">
+      <input type="text" id="fullname" placeholder="Full Name" required>
+      <input type="tel" id="phone" placeholder="Phone Number" required>
+      <input type="text" id="address" placeholder="Address" required>
+      <input type="text" id="city" placeholder="City" required>
+      <input type="text" id="state" placeholder="State" required>
+      <input type="text" id="pincode" placeholder="Pincode" required>
+    </form>
+
+    <!-- Payment Methods -->
+    <h2>Payment Method</h2>
+    <div class="payment-methods">
+      <label><input type="radio" name="payment" value="COD" checked> Cash on Delivery</label>
+      <label><input type="radio" name="payment" value="UPI"> UPI</label>
+      <label><input type="radio" name="payment" value="Card"> Credit/Debit Card</label>
+      <label><input type="radio" name="payment" value="NetBanking"> Net Banking</label>
+    </div>
+
+    <!-- Dynamic Payment Fields -->
+    <div id="payment-fields" class="payment-fields"></div>
+
+    <div class="order-total">
+      <button class="confirm-btn" onclick="confirmOrder()">Confirm Order</button>
+    </div>
+  </div>
+
+  <div id="order-message" class="order-message"></div>
+
+  <script src="scripts/order.js"></script>
+</body>
+</html>

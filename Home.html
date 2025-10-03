@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Online Shopping</title>
+  <link rel="stylesheet" href="style/style.css"/>
+</head>
+
+<body>
+  <nav>
+    <ul class="inline-links">
+      <li><a href="Home.html">Home</a></li>
+      <li><a href="cart.html">Cart</a></li>
+      <li><a href="order.html">Order</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="register.html">Register</a></li>
+      <li><a href="admin.html">Admin Panel</a></li>
+    
+
+    <!-- 🔍 Search Bar -->
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="Search for shirts, watches, kids dress...">
+      <button onclick="searchProducts()">Search</button>
+    </div>
+
+    </ul>
+  </nav>
+
+  <div class="category-grid">
+    <div class="category-card" onclick="location.href='men.html'">
+      <img src="images/mens/men.jpg" alt="Men">
+      <h2>Men</h2>
+    </div>
+    <div class="category-card" onclick="location.href='women.html'">
+      <img src="images/womens/women.jpg" alt="Women">
+      <h2>Women</h2>
+    </div>
+    <div class="category-card" onclick="location.href='kids.html'">
+      <img src="images/chiildern/childern.jpg" alt="Kids">
+      <h2>Kids</h2>
+    </div>
+    <div class="category-card" onclick="location.href='accessories.html'">
+      <img src="images/Accessories/watch1.png" alt="Accessories">
+      <h2>Accessories</h2>
+    </div>
+  </div>
+
+  <div id="product-list">
+    <!-- Products will be loaded here -->
+  </div>
+
+  <script src="scripts/home.js"></script>
+</body>
+</html>
